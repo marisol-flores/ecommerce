@@ -1,21 +1,24 @@
 * {
     margin: 2px;
     padding: 0;
-    background-color: rgb(131, 159, 205);
 }
 
-nav{
-    background-color: rgb(179, 205, 248);
+.navegacion{
+    /* height: 26px;
     text-align: center;
     font-size: 25px;
     border: 5px solid rgb(179, 205, 248);
+    border-style: dotted; */
 }
 
-h1 {
+.titulo {
+
+    height: 60px;
     background-color: rgb(238, 150, 238);
     text-align: center;
     font-size: 50px;
     border: 5px solid rgb(179, 205, 248);
+
 }
 
 h2{
@@ -32,7 +35,8 @@ h3{
 }
 
 .logo{
-    width: 8rem
+    width: 8rem;
+    padding: 40px;
 }
 
 
@@ -56,4 +60,45 @@ h3{
     background-color: rgb(236, 228, 142);
     border: 5px solid rgb(253, 251, 138);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav_item
+{
+   /* display: inline; */
+   flex-grow: 0;
+   flex: 1;
+
+   background-color: rgb(209, 180, 235);
+   list-style: none;
+   border-color: rgb(231, 201, 201);
+   border-style: dotted;
+   
+
+}
+
+.nav_item:hover{
+background-color: rgb(143, 217, 252); 
+}
+
+.barra-nav{
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    list-style: none;
+    border-style: dashed;
+}
+
+.galeria-grid{
+display: grid;
+gap: 2rem;
+grid-template-columns: 1fr 1fr;
+
+padding-block: 2rem;
+margin-inline: auto;
+
+width: 50rem;
+
 }
